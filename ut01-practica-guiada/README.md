@@ -22,3 +22,8 @@ Repositorio con historial de commits visible con `git log --oneline`.
 ## Problemas encontrados y soluciones
 
 - Ninguno de momento (se completa al terminar la práctica).
+
+## Qué has aprendido
+
+- El ciclo modificar, git add, git commit y git log.
+- Que cada cambio debe tener su propio commit con mensaje de dos partes.
