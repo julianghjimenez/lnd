@@ -1,0 +1,5 @@
+=== git log ===
+ceb9f44 Amplia README con la sección de aprendizaje
+780ac30 Añade README inicial del microproyecto
+=== git status ===
+?? comprobaciones.txt
