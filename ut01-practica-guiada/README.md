@@ -61,7 +61,7 @@ Existen diferentes lenguajes y formatos, y cada uno tiene sus propias caracterí
 | YAML | Formato de datos estructurados | General para datos de configuración | Configuración de programas |
 | SVG | Gráficos vectoriales basados en XML | Específico |Gráficos e imágenes web |
 
-4. Comparativa con ejemplos reales
+ ## 4. Comparativa con ejemplos reales
 
 Para comparar los diferentes formatos, voy a utilizar el mismo ejemplo en todos ellos: un libro llamado El principito, escrito por Antoine de Saint-Exupéry en 1943.
 
@@ -122,3 +122,31 @@ Comentario: YAML también permite organizar datos, pero utiliza una sintaxis má
 | Facilidad de lectura | Alta | Alta | Muy alta | Alta |Muy alta |
 
 Después de comparar los ejemplos, se puede ver que todos permiten representar información de alguna manera, pero no sirven exactamente para lo mismo. HTML está pensado para páginas web, XML permite definir estructuras de datos, Markdown facilita la documentación y JSON y YAML se utilizan para organizar e intercambiar información.
+
+## 5. Fragmentos XML de vocabularios distintos
+
+Una característica importante de XML es que no tiene unas etiquetas fijas para todos los casos. Podemos crear nombres de etiquetas diferentes dependiendo de la información que queramos representar.
+
+### Ejemplo 1: catálogo de libros
+
+<catalogo>
+  <libro id="L01">
+    <titulo>El principito</titulo>
+    <autor>Antoine de Saint-Exupéry</autor>
+    <anio>1943</anio>
+  </libro>
+</catalogo>
+
+Este ejemplo representa un catálogo de libros. Tiene elementos como catalogo, libro, titulo, autor y anio. El atributo id="L01" sirve para identificar el libro.
+
+### Ejemplo 2: pedido de una tienda
+
+<pedido numero="P001">
+  <cliente>Julián Hernández</cliente>
+  <producto codigo="PR01">
+    <nombre>Cuaderno</nombre>
+    <cantidad>2</cantidad>
+  </producto>
+</pedido>
+
+Este segundo ejemplo representa un pedido de una tienda. Aparecen elementos como pedido, cliente, producto, nombre y cantidad. Los atributos permiten identificar el pedido y el producto.
