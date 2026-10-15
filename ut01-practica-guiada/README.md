@@ -169,3 +169,23 @@ Los lenguajes y formatos se utilizan en distintos ámbitos dependiendo de lo que
 | Gráficos web | SVG | Crear iconos y logotipos que se pueden ampliar sin perder calidad. |
 
 Cada formato tiene un uso en el que resulta especialmente práctico. Por eso es importante conocer sus diferencias y elegir el adecuado para cada proyecto.
+
+## 7. Necesidad de un lenguaje de marcas de propósito general
+
+Un lenguaje de marcas de propósito general, como XML, permite representar diferentes tipos de información sin estar limitado a una única función. Esto resulta útil cuando necesitamos trabajar con datos de distintos ámbitos.
+
+Hay tres razones principales por las que puede ser necesario:
+
+__Se adapta a diferentes necesidades:__ podemos crear nuestras propias etiquetas según la información que queramos representar. Por ejemplo, podemos utilizar unas etiquetas para libros y otras para pedidos.
+
+__Facilita el intercambio de información:__ diferentes programas pueden compartir datos si utilizan una estructura y unas reglas comunes. Esto ayuda a que las aplicaciones puedan comunicarse entre sí.
+
+__Separa los datos de su presentación:__ la información puede guardarse independientemente de cómo se vaya a mostrar. Así, los mismos datos pueden utilizarse en diferentes aplicaciones.
+
+Algunos ámbitos donde se utiliza XML son:
+
+__Ofimática:__ los documentos DOCX contienen archivos XML que describen partes del documento.
+
+__Sindicación de contenidos:__ RSS utiliza XML para distribuir noticias y novedades de páginas web.
+
+__Gráficos vectoriales:__ SVG utiliza XML para describir imágenes vectoriales.
