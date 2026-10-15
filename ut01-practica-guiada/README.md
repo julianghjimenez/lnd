@@ -61,3 +61,64 @@ Existen diferentes lenguajes y formatos, y cada uno tiene sus propias caracterí
 | YAML | Formato de datos estructurados | General para datos de configuración | Configuración de programas |
 | SVG | Gráficos vectoriales basados en XML | Específico |Gráficos e imágenes web |
 
+4. Comparativa con ejemplos reales
+
+Para comparar los diferentes formatos, voy a utilizar el mismo ejemplo en todos ellos: un libro llamado El principito, escrito por Antoine de Saint-Exupéry en 1943.
+
+HTML
+
+<article>
+  <h2>El principito</h2>
+  <p>Autor: Antoine de Saint-Exupéry</p>
+  <p>Año: 1943</p>
+</article>
+
+Comentario: HTML utiliza etiquetas para organizar el contenido de una página web.
+
+XML
+
+<libro>
+  <titulo>El principito</titulo>
+  <autor>Antoine de Saint-Exupéry</autor>
+  <anio>1943</anio>
+</libro>
+
+Comentario: XML permite crear etiquetas propias según la información que queremos guardar.
+
+Markdown
+
+## El principito
+
+- **Autor:** Antoine de Saint-Exupéry
+- **Año:** 1943
+
+Comentario: Markdown utiliza símbolos sencillos para crear títulos, listas y texto en negrita.
+
+JSON
+
+{
+  "titulo": "El principito",
+  "autor": "Antoine de Saint-Exupéry",
+  "anio": 1943
+}
+
+Comentario: JSON organiza la información mediante claves y valores. Es muy utilizado para enviar datos entre aplicaciones, por ejemplo, cuando una web recibe información de un servidor.
+
+YAML
+
+titulo: El principito
+autor: Antoine de Saint-Exupéry
+anio: 1943
+
+Comentario: YAML también permite organizar datos, pero utiliza una sintaxis más sencilla y no necesita llaves ni comas en este ejemplo.
+
+ ### Tabla comparativa  
+ 
+| Característica | HTML | XML | Markdown | JSON | YAML | 
+| Utiliza etiquetas | Sí | Sí | No | No | No | 
+| Permite crear etiquetas propias | No, usa elementos definidos por HTML | Sí | No | No | No |
+| Organiza datos | Sí, para contenido web | Sí | De forma limitada | Sí | Sí |
+| Uso principal | Páginas web | Intercambio de datos | Documentación | Intercambio de datos | Configuración |
+| Facilidad de lectura | Alta | Alta | Muy alta | Alta |Muy alta |
+
+Después de comparar los ejemplos, se puede ver que todos permiten representar información de alguna manera, pero no sirven exactamente para lo mismo. HTML está pensado para páginas web, XML permite definir estructuras de datos, Markdown facilita la documentación y JSON y YAML se utilizan para organizar e intercambiar información.
