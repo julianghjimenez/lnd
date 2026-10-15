@@ -189,3 +189,13 @@ __Ofimática:__ los documentos DOCX contienen archivos XML que describen partes 
 __Sindicación de contenidos:__ RSS utiliza XML para distribuir noticias y novedades de páginas web.
 
 __Gráficos vectoriales:__ SVG utiliza XML para describir imágenes vectoriales.
+
+## 8. Problemas y soluciones
+
+Durante la realización de esta tarea, un aspecto que puede resultar confuso es diferenciar los lenguajes de marcas de otros formatos de datos.
+
+Por ejemplo, HTML y XML utilizan etiquetas, mientras que JSON utiliza claves y valores y YAML se basa en claves, valores e indentación. Aunque todos permiten organizar información, no todos se consideran lenguajes de marcas.
+
+Para aclarar esta diferencia, comparé la forma en la que se escribe cada formato y el uso que tiene. También revisé los ejemplos XML para comprobar que las etiquetas estuvieran cerradas correctamente, que los elementos estuvieran bien anidados y que los atributos tuvieran comillas.
+
+## 
