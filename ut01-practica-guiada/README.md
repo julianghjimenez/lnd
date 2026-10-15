@@ -35,7 +35,7 @@ Repositorio con historial de commits visible con `git log --oneline`.
 
 Un __Lenguaje de marca__ o __Markup Language__ es un modo de escritura en texto plano que permite una presentación más explicita del contenido, estructura y semántica a traves de una codificación de etiquetas llamadas marcas.
 
-()[]
+[webgrafia]( https://lnd-pre-6f69bf.gitlab.io/ut01/teoria/01-lenguajes-de-marcas/ )
 
 ## 2. Ventajas en el tratamiento de la información
 
