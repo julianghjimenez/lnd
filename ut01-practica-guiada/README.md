@@ -198,4 +198,50 @@ Por ejemplo, HTML y XML utilizan etiquetas, mientras que JSON utiliza claves y v
 
 Para aclarar esta diferencia, comparé la forma en la que se escribe cada formato y el uso que tiene. También revisé los ejemplos XML para comprobar que las etiquetas estuvieran cerradas correctamente, que los elementos estuvieran bien anidados y que los atributos tuvieran comillas.
 
-## 
+## 9. Cómo se construyó (paso a paso)
+
+Para realizar el proyecto utilicé VS Code para editar el archivo Markdown y Git para guardar los cambios y consultar el historial.
+
+### Paso 1. Crear el repositorio
+
+Primero preparé la carpeta del proyecto y ejecuté el siguiente comando:
+````
+git init
+````
+
+Este comando inicializa el repositorio local y permite empezar a registrar los cambios realizados en los archivos.
+
+### Paso 2. Crear y redactar el README
+
+Después preparé el archivo README.md y escribí los nueve apartados de la tarea. Utilicé títulos, listas, tablas y bloques de código para organizar la información y mostrar ejemplos de los diferentes formatos.
+
+### Paso 3. Guardar los cambios con Git
+
+Cada vez que terminé un apartado, añadí los cambios y creé un commit con un mensaje que explicaba lo que había hecho.
+
+Por ejemplo:
+````
+git add README.md
+git commit -m "Añade el apartado 1: qué es un lenguaje de marcas" -m "Explica el concepto y diferencia etiqueta, elemento y atributo."
+````
+El primer mensaje resume el cambio y el segundo explica con algo más de detalle qué se ha añadido. Repetí este proceso para los demás apartados, adaptando el mensaje a cada uno.
+
+### Paso 4. Consultar el historial
+
+Para comprobar los commits realizados, utilicé:
+````
+git log --oneline
+````
+Este comando muestra el historial de forma resumida y permite revisar los mensajes de los commits.
+
+Paso 5. Comprobar si quedaban cambios pendientes
+
+También utilicé:
+````
+git status --short
+````
+Si el comando no muestra ninguna línea, significa que no hay cambios pendientes de registrar. Si aparecen archivos, hay que revisarlos antes de entregar.
+
+### Paso 6. Preparar las evidencias
+
+Por último, preparé la carpeta evidencias/ para guardar las capturas y el archivo de comprobaciones solicitado. Estas evidencias deben mostrar el trabajo realizado y los resultados reales de los comandos.
