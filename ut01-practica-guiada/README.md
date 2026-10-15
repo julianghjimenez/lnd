@@ -54,12 +54,13 @@ Los lenguajes de marcas y los formatos de datos estructurados tienen varias vent
 Existen diferentes lenguajes y formatos, y cada uno tiene sus propias características y usos.
 
 | Lenguaje o formato | Tipo según su finalidad |Propósito |Ámbito principal |
+| --- | --- | --- | --- |
 | HTML | De presentación y estructuración | Específico | Páginas web |
 | XML | Descriptivo y estructural | General | Intercambio de datos |
 | Markdown | Ligero, para escribir documentos | Específico | Documentación |
 | JSON | Formato de datos estructurados | General para intercambio de datos | Aplicaciones y API |
 | YAML | Formato de datos estructurados | General para datos de configuración | Configuración de programas |
-| SVG | Gráficos vectoriales basados en XML | Específico |Gráficos e imágenes web |
+| SVG | Gráficos vectoriales basados en XML | Específico | Gráficos e imágenes web |
 
  ## 4. Comparativa con ejemplos reales
 
@@ -114,12 +115,13 @@ Comentario: YAML también permite organizar datos, pero utiliza una sintaxis má
 
  ### Tabla comparativa  
  
-| Característica | HTML | XML | Markdown | JSON | YAML | 
-| Utiliza etiquetas | Sí | Sí | No | No | No | 
+| Característica | HTML | XML | Markdown | JSON | YAML |
+| --- | --- | --- | --- | --- | --- |
+| Utiliza etiquetas | Sí | Sí | No | No | No |
 | Permite crear etiquetas propias | No, usa elementos definidos por HTML | Sí | No | No | No |
 | Organiza datos | Sí, para contenido web | Sí | De forma limitada | Sí | Sí |
 | Uso principal | Páginas web | Intercambio de datos | Documentación | Intercambio de datos | Configuración |
-| Facilidad de lectura | Alta | Alta | Muy alta | Alta |Muy alta |
+| Facilidad de lectura | Alta | Alta | Muy alta | Alta | Muy alta |
 
 Después de comparar los ejemplos, se puede ver que todos permiten representar información de alguna manera, pero no sirven exactamente para lo mismo. HTML está pensado para páginas web, XML permite definir estructuras de datos, Markdown facilita la documentación y JSON y YAML se utilizan para organizar e intercambiar información.
 
@@ -128,7 +130,7 @@ Después de comparar los ejemplos, se puede ver que todos permiten representar i
 Una característica importante de XML es que no tiene unas etiquetas fijas para todos los casos. Podemos crear nombres de etiquetas diferentes dependiendo de la información que queramos representar.
 
 ### Ejemplo 1: catálogo de libros
-
+````
 <catalogo>
   <libro id="L01">
     <titulo>El principito</titulo>
@@ -136,11 +138,11 @@ Una característica importante de XML es que no tiene unas etiquetas fijas para 
     <anio>1943</anio>
   </libro>
 </catalogo>
-
+````
 Este ejemplo representa un catálogo de libros. Tiene elementos como catalogo, libro, titulo, autor y anio. El atributo id="L01" sirve para identificar el libro.
 
 ### Ejemplo 2: pedido de una tienda
-
+````
 <pedido numero="P001">
   <cliente>Julián Hernández</cliente>
   <producto codigo="PR01">
@@ -148,5 +150,22 @@ Este ejemplo representa un catálogo de libros. Tiene elementos como catalogo, l
     <cantidad>2</cantidad>
   </producto>
 </pedido>
-
+````
 Este segundo ejemplo representa un pedido de una tienda. Aparecen elementos como pedido, cliente, producto, nombre y cantidad. Los atributos permiten identificar el pedido y el producto.
+
+ ## 6. Ámbitos de aplicación
+
+Los lenguajes y formatos se utilizan en distintos ámbitos dependiendo de lo que necesitemos hacer.
+
+| Ámbito | Lenguaje o formato | Ejemplo de uso |
+| --- | --- | --- |
+| Desarrollo web | HTML |Crear una página con títulos, textos, imágenes y enlaces. | 
+| Intercambio de datos | XML | Compartir información estructurada entre aplicaciones que utilizan un vocabulario común. |
+| Aplicaciones web | JSON | Enviar los datos de un usuario desde un servidor a una aplicación. |
+| Documentación | Markdown | Crear el README de un proyecto en GitHub o GitLab. | 
+| Configuración | YAML | Configurar servicios mediante un archivo compose.yaml de Docker Compose. |
+| Ofimática | XML | Guardar parte de la estructura y el contenido interno de documentos DOCX. |
+| Sindicación de contenidos | XML | Distribuir noticias de una página web mediante RSS. |
+| Gráficos web | SVG | Crear iconos y logotipos que se pueden ampliar sin perder calidad. |
+
+Cada formato tiene un uso en el que resulta especialmente práctico. Por eso es importante conocer sus diferencias y elegir el adecuado para cada proyecto.
