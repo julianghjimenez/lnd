@@ -48,3 +48,16 @@ Los lenguajes de marcas y los formatos de datos estructurados tienen varias vent
 - Son fáciles de leer: muchos utilizan texto que podemos entender sin necesitar un programa especial. Por ejemplo, en Markdown podemos ver rápidamente dónde empieza un título o una lista.
 
 - Permiten automatizar tareas: los programas pueden leer los datos y utilizarlos sin que una persona tenga que copiarlos manualmente. Por ejemplo, una tienda online puede procesar los datos de un producto para mostrar su nombre y precio.
+
+## 3. Clasificación de los lenguajes de marcas
+
+Existen diferentes lenguajes y formatos, y cada uno tiene sus propias características y usos.
+
+| Lenguaje o formato | Tipo según su finalidad |Propósito |Ámbito principal |
+| HTML | De presentación y estructuración | Específico | Páginas web |
+| XML | Descriptivo y estructural | General | Intercambio de datos |
+| Markdown | Ligero, para escribir documentos | Específico | Documentación |
+| JSON | Formato de datos estructurados | General para intercambio de datos | Aplicaciones y API |
+| YAML | Formato de datos estructurados | General para datos de configuración | Configuración de programas |
+| SVG | Gráficos vectoriales basados en XML | Específico |Gráficos e imágenes web |
+
