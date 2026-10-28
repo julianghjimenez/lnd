@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo xmlns:xsi="http://w3.org">
+
+  <libro id="L001" estado="nuevo">
+    <titulo>El Psicoanalista</titulo>
+    <autor>John Katzenbach</autor>
+    <anio>2002</anio>
+    <precio moneda="EUR">19.95</precio>
+    <genero>Thriller</genero>
+  </libro>
+
+  <libro id="L002">
+    <titulo>Buenos Presagios</titulo>
+    <autor>Terry Pratchett</autor>
+    <autor>Neil Gaiman</autor>
+    <anio>1990</anio>
+    <precio moneda="USD">14.50</precio>
+  </libro>
+
+</catalogo>
