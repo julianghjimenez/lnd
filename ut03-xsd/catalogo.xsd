@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="moneda">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EUR"/>
+      <xs:enumeration value="USD"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="estadoLibro">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="nuevo"/>
+      <xs:enumeration value="usado"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="catalogo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="libro" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo" type="xs:string"/>
+              <xs:element name="autor" type="xs:string" maxOccurs="unbounded"/>
+              <xs:element name="anio" type="xs:integer"/>
+              <xs:element name="precio">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:decimal">
+                      <xs:attribute name="moneda" type="moneda" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="genero" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:ID" use="required"/>
+            <xs:attribute name="estado" type="estadoLibro" default="usado"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
