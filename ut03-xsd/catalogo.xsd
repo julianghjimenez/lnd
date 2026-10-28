@@ -20,9 +20,9 @@
       <xs:sequence>
         <xs:element name="libro" maxOccurs="unbounded">
           <xs:complexType>
-            <xs:sequence>
+            <xs:all>
               <xs:element name="titulo" type="xs:string"/>
-              <xs:element name="autor" type="xs:string" maxOccurs="unbounded"/>
+              <xs:element name="autor" type="xs:string"/>
               <xs:element name="anio" type="xs:integer"/>
               <xs:element name="precio">
                 <xs:complexType>
@@ -34,7 +34,7 @@
                 </xs:complexType>
               </xs:element>
               <xs:element name="genero" type="xs:string" minOccurs="0"/>
-            </xs:sequence>
+            </xs:all>
             <xs:attribute name="id" type="xs:ID" use="required"/>
             <xs:attribute name="estado" type="estadoLibro" default="usado"/>
           </xs:complexType>

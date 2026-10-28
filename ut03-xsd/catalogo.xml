@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalogo xmlns:xsi="http://w3.org">
-
-  <libro id="L001" estado="nuevo">
+<catalogo 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="catalogo.xsd">
+<libro id="L001" estado="nuevo">
     <titulo>El Psicoanalista</titulo>
     <autor>John Katzenbach</autor>
     <anio>2002</anio>
@@ -11,8 +12,7 @@
 
   <libro id="L002">
     <titulo>Buenos Presagios</titulo>
-    <autor>Terry Pratchett</autor>
-    <autor>Neil Gaiman</autor>
+    <autor>Terry Pratchett</autor> 
     <anio>1990</anio>
     <precio moneda="USD">14.50</precio>
   </libro>
