@@ -1,0 +1,10 @@
+
+<!ELEMENT catalogo (libro+)>
+<!ELEMENT libro (titulo, autor, anio, precio, genero?)>
+<!ATTLIST libro id ID #REQUIRED estado (nuevo | usado) "usado">
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda (EUR | USD) #REQUIRED>
+<!ELEMENT genero (#PCDATA)>
